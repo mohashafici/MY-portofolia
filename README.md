@@ -15,9 +15,17 @@ This is a React portfolio project that includes a contact form integrated with F
 
 ## Getting Started
 
+## Demo
+
+Check out the live demo of the project: https://my-portofolia.netlify.app/
+
+License
+This project is licensed under the MIT License.
+
 ### 1. Clone the repository
 
 git clone https://github.com/mohashafici/MY-portofolia
+
 cd MY-portofolia
 
 
