@@ -9,7 +9,7 @@ const Home = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setTitleIndex((prevIndex) => (prevIndex + 1) % titles.length);
-    }, 2000); // Change every 2 seconds
+    }, 1000); // Change every 2 seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -24,7 +24,7 @@ const Home = () => {
         />
         <h1 className="text-5xl font-bold">Hi, I'm Mohamed Shafici</h1>
         <p className="text-xl mt-4">
-          A <span className="text-teal-400">{titles[titleIndex]}</span> with 1 years of commercial experience creating successful websites.
+          A <span className="text-teal-400">{titles[titleIndex]}</span> with 10 years of commercial experience creating successful websites.
         </p>
         <Link to="/projects">
           <button className="mt-6 px-6 py-2 bg-teal-400 text-gray-900 rounded hover:bg-teal-500">
