@@ -15,7 +15,7 @@ const features = [
   {
     icon: <LightBulbIcon className="h-12 w-12 text-teal-400" />,
     title: 'Intuitive',
-    description: 'My layouts will work on any device, big or small.',
+    description: 'Easy to use interfaces and intuitive UX/UI.',
   },
   {
     icon: <CodeBracketSquareIcon className="h-12 w-12 text-teal-400" />,
@@ -32,7 +32,9 @@ const Features = () => {
           {features.map((feature, index) => (
             <div key={index} className="w-full md:w-1/2 lg:w-1/4 p-4">
               <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
-                <div className="mb-4">{feature.icon}</div>
+                <div className="flex justify-center mb-4">
+                  {feature.icon}
+                </div>
                 <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
                 <p className="text-gray-400">{feature.description}</p>
               </div>
@@ -41,8 +43,9 @@ const Features = () => {
         </div>
         <div className="text-center mt-8">
           <a
-            href="/path/to/resume.pdf"
+            href="Assets\Mohamed Shafici Abdirahman.pdf"
             className="text-teal-400 hover:underline"
+            download
           >
             Download my resume (PDF)
           </a>

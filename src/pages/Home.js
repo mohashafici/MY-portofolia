@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import profileImage from '../screenshots/ProfileImage.jpeg';
+import Features from '../components/Features'; // Adjust the path according to your project structure
 
 const Home = () => {
   const [titleIndex, setTitleIndex] = useState(0);
@@ -15,7 +16,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white">
       <div className="text-center">
         <img
           src={profileImage}
@@ -32,6 +33,7 @@ const Home = () => {
           </button>
         </Link>
       </div>
+      <Features /> {/* Include the Features component here */}
     </div>
   );
 };
